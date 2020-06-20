@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5908C785249DD9A100ADE922 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5908C784249DD9A100ADE922 /* Event.swift */; };
+		5908C787249DDBEC00ADE922 /* EventsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5908C786249DDBEC00ADE922 /* EventsData.swift */; };
+		5908C789249DDC6700ADE922 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5908C788249DDC6700ADE922 /* EventRow.swift */; };
+		5908C78B249DE30A00ADE922 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5908C78A249DE30A00ADE922 /* EventList.swift */; };
+		5908C78D249DE62A00ADE922 /* EventEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5908C78C249DE62A00ADE922 /* EventEditor.swift */; };
+		5908C78F249E073800ADE922 /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5908C78E249E073800ADE922 /* EventDetail.swift */; };
 		593944DB2444537E004EA854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593944DA2444537E004EA854 /* AppDelegate.swift */; };
 		593944DD2444537E004EA854 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593944DC2444537E004EA854 /* SceneDelegate.swift */; };
 		593944DF2444537E004EA854 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593944DE2444537E004EA854 /* ContentView.swift */; };
@@ -24,6 +30,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5908C784249DD9A100ADE922 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5908C786249DDBEC00ADE922 /* EventsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsData.swift; sourceTree = "<group>"; };
+		5908C788249DDC6700ADE922 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
+		5908C78A249DE30A00ADE922 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		5908C78C249DE62A00ADE922 /* EventEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditor.swift; sourceTree = "<group>"; };
+		5908C78E249E073800ADE922 /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
 		5935DFA72445CF9D00CC3AA9 /* Kanahei's E-Book.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kanahei's E-Book.entitlements"; sourceTree = "<group>"; };
 		593944D72444537E004EA854 /* Kanahei's E-Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kanahei's E-Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		593944DA2444537E004EA854 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +66,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5908C782249DD8EF00ADE922 /* character */ = {
+			isa = PBXGroup;
+			children = (
+				593944FC244492A9004EA854 /* CharacterDetail.swift */,
+				593944F82444862C004EA854 /* Character.swift */,
+				593944F6244485B2004EA854 /* CharacterList.swift */,
+				593944F424447FF6004EA854 /* CharacterRow.swift */,
+				593944FA24448B6C004EA854 /* Data.swift */,
+			);
+			path = character;
+			sourceTree = "<group>";
+		};
+		5908C783249DD95B00ADE922 /* event */ = {
+			isa = PBXGroup;
+			children = (
+				5908C784249DD9A100ADE922 /* Event.swift */,
+				5908C786249DDBEC00ADE922 /* EventsData.swift */,
+				5908C788249DDC6700ADE922 /* EventRow.swift */,
+				5908C78A249DE30A00ADE922 /* EventList.swift */,
+				5908C78C249DE62A00ADE922 /* EventEditor.swift */,
+				5908C78E249E073800ADE922 /* EventDetail.swift */,
+			);
+			path = event;
+			sourceTree = "<group>";
+		};
 		593944CE2444537E004EA854 = {
 			isa = PBXGroup;
 			children = (
@@ -74,14 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				5935DFA72445CF9D00CC3AA9 /* Kanahei's E-Book.entitlements */,
-				593944F424447FF6004EA854 /* CharacterRow.swift */,
-				593944FA24448B6C004EA854 /* Data.swift */,
-				593944F6244485B2004EA854 /* CharacterList.swift */,
-				593944FC244492A9004EA854 /* CharacterDetail.swift */,
-				593944F82444862C004EA854 /* Character.swift */,
 				593944F0244472E8004EA854 /* jf-openhuninn-1.0.ttf */,
 				593944DA2444537E004EA854 /* AppDelegate.swift */,
+				5908C782249DD8EF00ADE922 /* character */,
 				593944DC2444537E004EA854 /* SceneDelegate.swift */,
+				5908C783249DD95B00ADE922 /* event */,
 				593944DE2444537E004EA854 /* ContentView.swift */,
 				593944FE244498F7004EA854 /* AppView.swift */,
 				593944EE24445FE4004EA854 /* YuruttoTownIntroView.swift */,
@@ -173,11 +207,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5908C78B249DE30A00ADE922 /* EventList.swift in Sources */,
+				5908C78F249E073800ADE922 /* EventDetail.swift in Sources */,
 				593944FD244492A9004EA854 /* CharacterDetail.swift in Sources */,
+				5908C785249DD9A100ADE922 /* Event.swift in Sources */,
+				5908C789249DDC6700ADE922 /* EventRow.swift in Sources */,
 				593944F524447FF6004EA854 /* CharacterRow.swift in Sources */,
 				593944EF24445FE4004EA854 /* YuruttoTownIntroView.swift in Sources */,
 				593944F92444862C004EA854 /* Character.swift in Sources */,
 				593944DB2444537E004EA854 /* AppDelegate.swift in Sources */,
+				5908C78D249DE62A00ADE922 /* EventEditor.swift in Sources */,
+				5908C787249DDBEC00ADE922 /* EventsData.swift in Sources */,
 				593944F7244485B2004EA854 /* CharacterList.swift in Sources */,
 				593944DD2444537E004EA854 /* SceneDelegate.swift in Sources */,
 				593944DF2444537E004EA854 /* ContentView.swift in Sources */,

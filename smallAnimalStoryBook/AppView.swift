@@ -14,12 +14,17 @@ struct AppView: View {
             ContentView()
                 .tabItem{
                     Image(systemName: "house.fill")
-                    Text("小鎮")
+                    Text("首頁")
             }
             CharacterList()
                 .tabItem{
                     Image(systemName: "person.2.fill")
-                    Text("居民")
+                    Text("角色")
+            }
+            EventList()
+                .tabItem{
+                    Image(systemName: "person.2.fill")
+                    Text("７７")
             }
         }
         .edgesIgnoringSafeArea(.top)
