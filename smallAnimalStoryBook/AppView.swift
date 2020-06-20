@@ -24,7 +24,7 @@ struct AppView: View {
             EventList()
                 .tabItem{
                     Image(systemName: "person.2.fill")
-                    Text("７７")
+                    Text("展覽")
             }
         }
         .edgesIgnoringSafeArea(.top)

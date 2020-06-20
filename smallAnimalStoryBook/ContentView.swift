@@ -24,11 +24,11 @@ struct ContentView: View {
                 VStack {
             Text("卡娜赫拉的小動物").font(Font.custom("jf-openhuninn-1.0", size: 35))
                     
-                Text("in").font(Font.custom("jf-openhuninn-1.0", size: 29))
+                //Text("in").font(Font.custom("jf-openhuninn-1.0", size: 29))
                         
-                NavigationLink(destination: YuruttoTownIntroView()) {
+                /*NavigationLink(destination: YuruttoTownIntroView()) {
                         Text("愜意小鎮").font(Font.custom("jf-openhuninn-1.0", size: 29))
-                    }
+                    }*/
                     HStack {
                         Button(action: {
                             self.rotateDegree = 360
