@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Event: Identifiable, Codable {
     let id = UUID()

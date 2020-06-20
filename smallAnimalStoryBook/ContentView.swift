@@ -7,11 +7,14 @@
 //
 
 import SwiftUI
-
+import SafariServices
 struct ContentView: View {
     
     @State private var rotateDegree: Double = 0
     @State private var show = false
+    @State var showSafari = false
+    @State var showWebview = false
+    @State var urlString = "http://www.kanahei.com/"
     
     var body: some View {
         NavigationView {
@@ -22,13 +25,20 @@ struct ContentView: View {
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .edgesIgnoringSafeArea(.all)
                 VStack {
-            Text("卡娜赫拉的小動物").font(Font.custom("jf-openhuninn-1.0", size: 35))
-                    
-                //Text("in").font(Font.custom("jf-openhuninn-1.0", size: 29))
-                        
-                /*NavigationLink(destination: YuruttoTownIntroView()) {
-                        Text("愜意小鎮").font(Font.custom("jf-openhuninn-1.0", size: 29))
-                    }*/
+                     Button(action: {
+                            self.urlString = "http://www.kanahei.com/"
+                            self.showSafari = true
+                     }){
+                        Text("卡娜赫拉的小動物").font(Font.custom("jf-openhuninn-1.0", size: 35))
+                    }.sheet(isPresented: $showSafari) {
+                        SafariView(url:URL(string: self.urlString)!)
+                    }
+                  Text("in").font(Font.custom("jf-openhuninn-1.0", size: 29))
+                  Button(action: {
+                    self.showWebview = !self.showWebview
+                   }){
+                    Text("愜意小鎮").font(Font.custom("jf-openhuninn-1.0", size: 29))
+                  }
                     HStack {
                         Button(action: {
                             self.rotateDegree = 360
@@ -50,6 +60,11 @@ struct ContentView: View {
                         .onAppear{
                             self.show = true
                         }
+                        
+                    }
+                    if (self.showWebview == true){
+                        WebView(urlString: "https://www.youtube.com/watch?v=1ioJ4J84q-o").frame(width: 400, height: 400)
+                        //.clipShape(Circle())
                     }
                     Spacer()
                 }
@@ -62,4 +77,18 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+struct SafariView: UIViewControllerRepresentable {
+
+    let url: URL
+
+    func makeUIViewController(context: UIViewControllerRepresentableContext<SafariView>) -> SFSafariViewController {
+        return SFSafariViewController(url: url)
+    }
+
+    func updateUIViewController(_ uiViewController: SFSafariViewController, context: UIViewControllerRepresentableContext<SafariView>) {
+
+    }
+
 }

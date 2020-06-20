@@ -4,7 +4,7 @@
 //
 //  Created by User06 on 2020/6/20.
 //  Copyright © 2020 bc. All rights reserved.
-//
+//CWB-32EC9ED3-5850-48CC-94B5-F4A317EC3B6B
 
 import SwiftUI
 
@@ -12,13 +12,11 @@ struct EventDetail: View {
     let event: Event
     var body: some View {
         VStack {
-            /*
-            Image(event.ename)
+            Image(event.title)
                 .resizable()
                 .scaledToFill()
-                .frame(height: 370.0)
+                .frame(height: 200.0)
                 .clipped()
-            */
             Text(event.address)
                 .multilineTextAlignment(.center)
                 .font(Font.custom("jf-openhuninn-1.0", size: 21))
