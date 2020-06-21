@@ -29,6 +29,6 @@ struct EventDetail: View {
 
 struct EventDetail_Previews: PreviewProvider {
     static var previews: some View {
-        EventDetail(event: Event(title: "卡娜赫拉的櫻花趣", address: "台中草悟廣場", category: 0, gone: true))
+        EventDetail(event: Event(title: "卡娜赫拉的櫻花趣", address: "台中草悟廣場", time: "2020/06/28 14:30:00", gone: true))
     }
 }

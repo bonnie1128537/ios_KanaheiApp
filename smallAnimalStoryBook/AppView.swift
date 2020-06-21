@@ -23,9 +23,15 @@ struct AppView: View {
             }
             EventList()
                 .tabItem{
-                    Image(systemName: "person.2.fill")
+                    Image(systemName: "calendar.badge.plus")
                     Text("展覽")
             }
+            KanaheiView(BandName: Band(name:"カナヘイ", imageName: "カナヘイ"))
+                .tabItem{
+                    Image(systemName: "tv.music.note.fill")
+                    Text("相關影片")
+            }
+            
         }
         .edgesIgnoringSafeArea(.top)
         .accentColor(Color(hue: 0.975, saturation: 0.395, brightness: 0.958))

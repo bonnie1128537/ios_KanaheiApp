@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		5908C78D249DE62A00ADE922 /* EventEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5908C78C249DE62A00ADE922 /* EventEditor.swift */; };
 		5908C78F249E073800ADE922 /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5908C78E249E073800ADE922 /* EventDetail.swift */; };
 		5908C791249E228B00ADE922 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5908C790249E228B00ADE922 /* ImagePickerController.swift */; };
+		591F9ED2249F96CB009069E5 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F9ED1249F96CB009069E5 /* NetworkImage.swift */; };
+		591F9ED8249FB6A8009069E5 /* KanaheiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F9ED7249FB6A8009069E5 /* KanaheiView.swift */; };
+		591F9EDA249FB8FA009069E5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F9ED9249FB8FA009069E5 /* Item.swift */; };
+		591F9EDC249FB92D009069E5 /* Band.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F9EDB249FB92D009069E5 /* Band.swift */; };
 		593944DB2444537E004EA854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593944DA2444537E004EA854 /* AppDelegate.swift */; };
 		593944DD2444537E004EA854 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593944DC2444537E004EA854 /* SceneDelegate.swift */; };
 		593944DF2444537E004EA854 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593944DE2444537E004EA854 /* ContentView.swift */; };
@@ -28,6 +32,9 @@
 		593944FB24448B6C004EA854 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593944FA24448B6C004EA854 /* Data.swift */; };
 		593944FD244492A9004EA854 /* CharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593944FC244492A9004EA854 /* CharacterDetail.swift */; };
 		593944FF244498F7004EA854 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593944FE244498F7004EA854 /* AppView.swift */; };
+		593CF6FB249FBB72008046F7 /* SearchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CF6FA249FBB72008046F7 /* SearchRow.swift */; };
+		593CF6FD249FBBB7008046F7 /* PhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CF6FC249FBBB7008046F7 /* PhotoData.swift */; };
+		593CF70B249FC3C0008046F7 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593CF70A249FC3C0008046F7 /* PlayerView.swift */; };
 		59F8E907249E3BD8009A7F9C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8E906249E3BD8009A7F9C /* WebView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +46,10 @@
 		5908C78C249DE62A00ADE922 /* EventEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditor.swift; sourceTree = "<group>"; };
 		5908C78E249E073800ADE922 /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
 		5908C790249E228B00ADE922 /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		591F9ED1249F96CB009069E5 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
+		591F9ED7249FB6A8009069E5 /* KanaheiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaheiView.swift; sourceTree = "<group>"; };
+		591F9ED9249FB8FA009069E5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		591F9EDB249FB92D009069E5 /* Band.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Band.swift; sourceTree = "<group>"; };
 		5935DFA72445CF9D00CC3AA9 /* Kanahei's E-Book.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kanahei's E-Book.entitlements"; sourceTree = "<group>"; };
 		593944D72444537E004EA854 /* Kanahei's E-Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kanahei's E-Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		593944DA2444537E004EA854 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +67,9 @@
 		593944FA24448B6C004EA854 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		593944FC244492A9004EA854 /* CharacterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetail.swift; sourceTree = "<group>"; };
 		593944FE244498F7004EA854 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		593CF6FA249FBB72008046F7 /* SearchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRow.swift; sourceTree = "<group>"; };
+		593CF6FC249FBBB7008046F7 /* PhotoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoData.swift; sourceTree = "<group>"; };
+		593CF70A249FC3C0008046F7 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		59F8E906249E3BD8009A7F9C /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +112,13 @@
 		593944CE2444537E004EA854 = {
 			isa = PBXGroup;
 			children = (
+				593CF6FA249FBB72008046F7 /* SearchRow.swift */,
+				593CF70A249FC3C0008046F7 /* PlayerView.swift */,
+				593CF6FC249FBBB7008046F7 /* PhotoData.swift */,
+				591F9ED7249FB6A8009069E5 /* KanaheiView.swift */,
+				591F9EDB249FB92D009069E5 /* Band.swift */,
+				591F9ED9249FB8FA009069E5 /* Item.swift */,
+				591F9ED1249F96CB009069E5 /* NetworkImage.swift */,
 				593944D92444537E004EA854 /* smallAnimalStoryBook */,
 				593944D82444537E004EA854 /* Products */,
 			);
@@ -185,6 +206,9 @@
 				Base,
 			);
 			mainGroup = 593944CE2444537E004EA854;
+			packageReferences = (
+				593CF6F9249FBA34008046F7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 593944D82444537E004EA854 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -220,15 +244,22 @@
 				5908C789249DDC6700ADE922 /* EventRow.swift in Sources */,
 				593944F524447FF6004EA854 /* CharacterRow.swift in Sources */,
 				593944EF24445FE4004EA854 /* YuruttoTownIntroView.swift in Sources */,
+				593CF6FD249FBBB7008046F7 /* PhotoData.swift in Sources */,
+				593CF70B249FC3C0008046F7 /* PlayerView.swift in Sources */,
 				593944F92444862C004EA854 /* Character.swift in Sources */,
 				593944DB2444537E004EA854 /* AppDelegate.swift in Sources */,
 				5908C78D249DE62A00ADE922 /* EventEditor.swift in Sources */,
 				5908C787249DDBEC00ADE922 /* EventsData.swift in Sources */,
 				593944F7244485B2004EA854 /* CharacterList.swift in Sources */,
+				591F9ED8249FB6A8009069E5 /* KanaheiView.swift in Sources */,
 				593944DD2444537E004EA854 /* SceneDelegate.swift in Sources */,
 				5908C791249E228B00ADE922 /* ImagePickerController.swift in Sources */,
 				593944DF2444537E004EA854 /* ContentView.swift in Sources */,
+				593CF6FB249FBB72008046F7 /* SearchRow.swift in Sources */,
+				591F9EDA249FB8FA009069E5 /* Item.swift in Sources */,
+				591F9ED2249F96CB009069E5 /* NetworkImage.swift in Sources */,
 				59F8E907249E3BD8009A7F9C /* WebView.swift in Sources */,
+				591F9EDC249FB92D009069E5 /* Band.swift in Sources */,
 				593944FF244498F7004EA854 /* AppView.swift in Sources */,
 				593944FB24448B6C004EA854 /* Data.swift in Sources */,
 			);
@@ -426,6 +457,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		593CF6F9249FBA34008046F7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 593944CF2444537E004EA854 /* Project object */;
 }

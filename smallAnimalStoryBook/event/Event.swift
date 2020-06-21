@@ -13,10 +13,10 @@ struct Event: Identifiable, Codable {
     let id = UUID()
     var title: String
     var address: String
-    var category: Int
+    var time: String
     var gone: Bool
     
     #if DEBUG
-    static let demoEvent = Event(title: "兔兔", address: "000", category: 0, gone: true)
+    static let demoEvent = Event(title: "兔兔", address: "000", time: "2020/06/28 14:30:00", gone: true)
     #endif
 }
