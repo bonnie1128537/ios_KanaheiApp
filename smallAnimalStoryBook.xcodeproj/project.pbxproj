@@ -112,13 +112,6 @@
 		593944CE2444537E004EA854 = {
 			isa = PBXGroup;
 			children = (
-				593CF6FA249FBB72008046F7 /* SearchRow.swift */,
-				593CF70A249FC3C0008046F7 /* PlayerView.swift */,
-				593CF6FC249FBBB7008046F7 /* PhotoData.swift */,
-				591F9ED7249FB6A8009069E5 /* KanaheiView.swift */,
-				591F9EDB249FB92D009069E5 /* Band.swift */,
-				591F9ED9249FB8FA009069E5 /* Item.swift */,
-				591F9ED1249F96CB009069E5 /* NetworkImage.swift */,
 				593944D92444537E004EA854 /* smallAnimalStoryBook */,
 				593944D82444537E004EA854 /* Products */,
 			);
@@ -135,6 +128,13 @@
 		593944D92444537E004EA854 /* smallAnimalStoryBook */ = {
 			isa = PBXGroup;
 			children = (
+				593CF6FA249FBB72008046F7 /* SearchRow.swift */,
+				593CF70A249FC3C0008046F7 /* PlayerView.swift */,
+				593CF6FC249FBBB7008046F7 /* PhotoData.swift */,
+				591F9ED7249FB6A8009069E5 /* KanaheiView.swift */,
+				591F9EDB249FB92D009069E5 /* Band.swift */,
+				591F9ED9249FB8FA009069E5 /* Item.swift */,
+				591F9ED1249F96CB009069E5 /* NetworkImage.swift */,
 				5935DFA72445CF9D00CC3AA9 /* Kanahei's E-Book.entitlements */,
 				593944F0244472E8004EA854 /* jf-openhuninn-1.0.ttf */,
 				593944DA2444537E004EA854 /* AppDelegate.swift */,
